@@ -19,7 +19,7 @@ prepare_model:
 
 training:
   root_dir: artifacts/training
-  gen_model_dir: artifacts/prepare_model/generator_model.h5
+  gan_model_dir: artifacts/prepare_model/generator_model.h5
   disc_model_dir: artifacts/prepare_model/dicsciminator_model.h5
   trained_model_dir: artifacts/training/model.h5
   history_dir: artifacts/training/history.json
