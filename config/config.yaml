@@ -1,0 +1,31 @@
+artifacts_root: artifacts
+
+data_ingestion:
+  root_dir: artifacts/data_ingestion
+  source_url: https://drive.google.com/file/d/153Gdeo7N0_MX1eE98KL0gqzWradpv6lx/view?usp=sharing
+  local_data_file: artifacts/data_ingestion/data.zip
+  unzip_dir: artifacts/data_ingestion
+
+data_preparation:
+  root_dir: artifacts/data_preparation
+  data_dir: artifacts/data_ingestion/
+  monet_dir: artifacts/data_preparation/monet_jpg
+  photo_dir: artifacts/data_preparation/photo_jpg
+
+prepare_model:
+  root_dir: artifacts/prepare_model
+  gen_model_dir: artifacts/prepare_model/generator_model.h5
+  disc_model_dir: artifacts/prepare_model/dicsciminator_model.h5
+
+training:
+  root_dir: artifacts/training
+  gen_model_dir: artifacts/prepare_model/generator_model.h5
+  disc_model_dir: artifacts/prepare_model/dicsciminator_model.h5
+  trained_model_dir: artifacts/training/model.h5
+  history_dir: artifacts/training/history.json
+
+model_evaluation:
+  root_dir: artifacts/evaluation
+  trained_model_dir: artifacts/training/model.h5
+  history_dir: artifacts/training/history.json
+  graph_dir: artifacts/evaluation/graphs.png

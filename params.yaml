@@ -1,0 +1,7 @@
+epochs: 1
+learning_rate: 0.001
+weight_decay: 0.001
+input_image_size: []
+batch_size: 32
+epsilon: 0.0000001
+decay_rate: 0.2
